@@ -9,7 +9,7 @@ import {VERSION} from '@angular/material';
 export class FooComponent implements OnInit {
 
   title = 'app';
-  private version = VERSION;
+  version = VERSION;
 
   constructor() { }
 
