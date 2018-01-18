@@ -1,6 +1,6 @@
 import { AppPage } from './app.po';
 
-describe('material2-sidenav-sticky-footer App', () => {
+describe('proj-ang2 App', () => {
   let page: AppPage;
 
   beforeEach(() => {

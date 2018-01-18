@@ -8,9 +8,8 @@ import {VERSION} from '@angular/material';
 })
 export class FooComponent implements OnInit {
 
-  private title = 'app';
+  title = 'app';
   private version = VERSION;
-
 
   constructor() { }
 
