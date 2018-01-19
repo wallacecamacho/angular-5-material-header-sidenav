@@ -4,7 +4,7 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {NgModule} from '@angular/core';
 import {CommonModule} from '@angular/common';
 import {HttpClientModule} from '@angular/common/http';
-import {CdkTableModule} from '@angular/cdk/table'
+import {CdkTableModule} from '@angular/cdk/table';
 import {OverlayModule} from '@angular/cdk/overlay';
 import {
   MatAutocompleteModule,
@@ -38,17 +38,10 @@ import {
   MatPaginatorModule
 } from '@angular/material';
 
-/**
- * NgModule that includes all Material modules that are required to serve 
- * the Plunker.
- */
 @NgModule({
   exports: [
-    // CDk
     CdkTableModule,
     OverlayModule,
-    
-    // Material
     MatAutocompleteModule,
     MatButtonModule,
     MatButtonToggleModule,
@@ -75,7 +68,6 @@ import {
     MatTabsModule,
     MatToolbarModule,
     MatTooltipModule,
-    
     MatNativeDateModule,
     MatSortModule,
     MatPaginatorModule,
