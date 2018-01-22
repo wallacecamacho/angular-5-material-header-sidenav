@@ -6,9 +6,9 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build --prod",
-    "test": "ng test",
+    "test": "ng test --single-run ",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e webdriver-manager update --ignore_ssl "
   },
   "private": true,
   "dependencies": {
@@ -47,6 +47,7 @@
     "protractor": "~5.1.2",
     "ts-node": "~3.2.0",
     "tslint": "~5.9.1",
+    "tslint-sonarts": "^1.4.0",
     "typescript": "~2.5.3"
   }
 }
