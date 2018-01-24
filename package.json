@@ -1,14 +1,14 @@
 {
   "name": "proj-ang2",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "license": "MIT",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build --prod",
-    "test": "ng test --single-run ",
+    "test": "ng test --single-run --watch=false --code-coverage ",
     "lint": "ng lint",
-    "e2e": "ng e2e webdriver-manager update --ignore_ssl "
+    "e2e": "ng e2e webdriver-manager --webdriver-update false --ssl false "
   },
   "private": true,
   "dependencies": {
@@ -36,6 +36,7 @@
     "@types/jasminewd2": "~2.0.2",
     "@types/node": "~6.0.60",
     "codelyzer": "^4.0.1",
+    "husky": "^0.14.3",
     "jasmine-core": "~2.8.0",
     "jasmine-spec-reporter": "~4.2.1",
     "karma": "~2.0.0",
@@ -49,5 +50,11 @@
     "tslint": "~5.9.1",
     "tslint-sonarts": "^1.4.0",
     "typescript": "~2.5.3"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm test && npm lint",
+      "pre-push": "npm test"
+    }
   }
 }

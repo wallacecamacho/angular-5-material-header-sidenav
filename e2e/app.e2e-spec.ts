@@ -9,6 +9,6 @@ describe('proj-ang2 App', () => {
 
   it('should display welcome message', () => {
     page.navigateTo();
-    expect(page.getParagraphText()).toEqual('Welcome to app!');
+    expect(page.getParagraphText()).toEqual('Angular 5 and Material 2 Sticky Footer Example');
   });
 });
