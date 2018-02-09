@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { HTTP_INTERCEPTORS } from '@angular/common/http';
 import { TokenInterceptor } from './auth/token.interceptor';
-
+import { HttpClientModule } from '@angular/common/http';
 
 import {AppRoutingModule} from './app.routing.module';
 import { AppComponent } from './app.component';
@@ -20,7 +20,8 @@ import { BarComponent } from './bar/bar.component';
   imports: [
     BrowserModule,
     MaterialModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [{
     provide: HTTP_INTERCEPTORS,
